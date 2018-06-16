@@ -361,6 +361,28 @@ header ul li a {
   margin: 0 auto;
   display: block;
 }
+.athlets .athlets__img:after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  width: 17px;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: #5e42b0;
+  box-shadow: -22px -10px 0px 0px #cec6e7;
+}
+.athlets .athlets__img:before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 17px;
+  width: 3px;
+  height: 18px;
+  border-radius: 1.5px;
+  background-color: #5e42b0;
+  box-shadow: -22px -10px 0px 0px #cec6e7;
+}
 .athlets .athlets__connection,
 .athlets .athlets__collaboration,
 .athlets .athlets__growth,
@@ -428,6 +450,11 @@ header ul li a {
 .athlets .athlets__growth {
   display: none;
 }
+@media (max-width: 767px) {
+  .athlets .athlets__img {
+    position: relative;
+  }
+}
 @media (min-width: 768px) {
   .athlets {
     width: 100%;
@@ -444,6 +471,16 @@ header ul li a {
     top: 120px;
     left: calc(-183px);
     z-index: 2;
+  }
+  .athlets .athlets__img:after {
+    position: absolute;
+    top: 115px;
+    left: 30px;
+  }
+  .athlets .athlets__img:before {
+    position: absolute;
+    top: 108px;
+    left: 37px;
   }
   .athlets .athlets__connection,
   .athlets .athlets__collaboration,
@@ -515,6 +552,16 @@ header ul li a {
     left: calc(-10px);
     z-index: 2;
   }
+  .athlets .athlets__img:after {
+    position: absolute;
+    top: 175px;
+    left: 85px;
+  }
+  .athlets .athlets__img:before {
+    position: absolute;
+    top: 168px;
+    left: 92px;
+  }
   .athlets span {
     font-size: 26px;
   }
@@ -556,6 +603,28 @@ header ul li a {
 .players .players__img {
   margin: 0 auto;
   display: block;
+}
+.players .players__img:after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: 210px;
+  width: 17px;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: #5e42b0;
+  box-shadow: -22px -10px 0px 0px #cec6e7;
+}
+.players .players__img:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 217px;
+  width: 3px;
+  height: 18px;
+  border-radius: 1.5px;
+  background-color: #5e42b0;
+  box-shadow: -22px -10px 0px 0px #cec6e7;
 }
 .players .players__connection,
 .players .players__collaboration,
@@ -624,6 +693,11 @@ header ul li a {
 .players .players__growth {
   display: none;
 }
+@media (max-width: 767px) {
+  .players .players__img {
+    position: relative;
+  }
+}
 @media (min-width: 768px) {
   .players {
     width: 100%;
@@ -641,6 +715,18 @@ header ul li a {
     top: -10px;
     right: calc(-183px);
     z-index: 2;
+  }
+  .players .players__img:after {
+    position: absolute;
+    top: 65px;
+    right: 290px;
+    box-shadow: 22px 15px 0px 0px #cec6e7;
+  }
+  .players .players__img:before {
+    position: absolute;
+    top: 58px;
+    right: 297px;
+    box-shadow: 22px 15px 0px 0px #cec6e7;
   }
   .players .players__connection,
   .players .players__collaboration,
@@ -712,6 +798,40 @@ header ul li a {
     right: 0px;
     left: 40%;
     z-index: 2;
+  }
+  .players .players__img:after {
+    position: absolute;
+    top: 110px;
+    right: 470px;
+    left: 780px;
+  }
+  .players .players__img:before {
+    position: absolute;
+    top: 103px;
+    right: 477px;
+    left: 787px;
+  }
+  .players:after {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 3px;
+    top: 360px;
+    right: 110px;
+    border-radius: 1.5px;
+    background-color: #5e42b0;
+    box-shadow: 22px 15px 0px 0px #cec6e7;
+  }
+  .players:before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 17px;
+    border-radius: 1.5px;
+    background-color: #5e42b0;
+    top: 353px;
+    right: 117px;
+    box-shadow: 22px 15px 0px 0px #cec6e7;
   }
   .players span {
     font-size: 26px;

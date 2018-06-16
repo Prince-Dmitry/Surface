@@ -15,6 +15,30 @@
 	.athlets__img {
 		margin: 0 auto;
 		display: block;
+
+		&:after {
+			content: "";
+			position: absolute;
+			top: 25px;
+			left: 10px;
+			width: 17px;
+			height: 3px;
+			border-radius: 1.5px;
+			background-color: #5e42b0;
+			box-shadow: -22px -10px 0px 0px #cec6e7;
+		}
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 18px;
+			left: 17px;
+			width: 3px;
+			height: 18px;
+			border-radius: 1.5px;
+			background-color: #5e42b0;
+			box-shadow: -22px -10px 0px 0px #cec6e7;
+		}
 	}
 
 	.athlets__connection,
@@ -94,6 +118,16 @@
 		display: none;
 	}
 }
+
+@media @mobile-widths-only {
+
+	.athlets {
+
+		.athlets__img {
+			position: relative;
+		}
+	}
+}
 	
 @media @tablet-widths {
 
@@ -113,6 +147,21 @@
 			top: 120px;
 			left: calc(-150px - 33%);
 			z-index: 2;
+		}
+
+		.athlets__img {
+
+			&:after {
+				position: absolute;
+				top: 115px;
+				left: 30px;
+			}
+
+			&:before {
+				position: absolute;
+				top: 108px;
+				left: 37px;
+			}
 		}
 
 		.athlets__connection,
@@ -199,6 +248,21 @@
 			right: 0;
 			left: calc(-10px);
 			z-index: 2;
+		}
+
+		.athlets__img {
+
+			&:after {
+				position: absolute;
+				top: 175px;
+				left: 85px;
+			}
+
+			&:before {
+				position: absolute;
+				top: 168px;
+				left: 92px;
+			}
 		}
 
 		span {
