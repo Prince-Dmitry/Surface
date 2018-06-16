@@ -1,0 +1,232 @@
+.players {
+	display: flex;
+	justify-content: column;
+	flex-wrap: wrap;
+
+	h2 {
+		color: #e7e7e7;
+		font-size: 36px;
+		text-transform: uppercase;
+		text-align: center;
+		display: block;
+		width: 100%;
+	}
+
+	.players__img {
+		margin: 0 auto;
+		display: block;
+	}
+
+	.players__connection,
+	.players__collaboration,
+	.players__growth,
+	.player__connection,
+	.player__collaboration,
+	.player__growth {
+		position: relative;
+		width: 100%;
+		padding: 0 20px;
+		box-sizing: padding-box;
+	}
+
+	.players__number {
+		position: absolute;
+		top: -10px;
+		left: 20px;
+		text-align: top;
+		font-size: 12px;
+		font-weight: bold;
+
+		&:after {
+			content: "";
+			position: absolute;
+			top: 18px;
+			left: 0;
+			width: 14px;
+			height: 4px;
+			border-radius: 2px;
+			background-color: #5e42b0;
+		}
+	}
+
+	span {
+		margin-left: 30px;
+		text-transform: uppercase;
+	}
+
+	.players__radiobuttons {
+		display: block;
+		width: 150px;
+		padding: 5px;
+		margin: 0 auto;
+
+		input[type="radio"] {
+			display: none;
+		}
+
+		.slider-controls {
+			width: 110px;
+			margin: 0 auto;
+
+			label {
+				display: inline-block;
+				width: 8px;
+				height: 8px;
+				border-radius: 50%;
+				background-color: #dddddd;
+				margin: 5px;
+			}
+		}
+
+		#player_1:checked ~ .slider-controls label[for="player_1"],
+		#player_2:checked ~ .slider-controls label[for="player_2"],
+		#player_3:checked ~ .slider-controls label[for="player_3"] {
+			display: inline-block;
+			width: 11px;
+			height: 11px;
+			background-color: #5c3caf;
+		}
+	}
+
+	.players__connection,
+	.players__collaboration,
+	.players__growth {
+		display: none;
+	}
+}
+	
+@media @tablet-widths {
+
+	.players {
+		width: 100%;
+		position: relative;
+		
+		h2 {
+			font-size: 58px;
+			margin-top: 85px;
+			text-align: left;
+		}
+
+		img {
+			width: 690px;
+			height: 565px;
+			position: absolute;
+			top: -10px;
+			right: calc(-150px - 33%);
+			z-index: 2;
+		}
+
+		.players__connection,
+		.players__collaboration,
+		.players__growth {
+			display: block;
+			min-height: 205px;
+			padding: 0 25px;
+			padding-right: 33%;
+		}
+
+		span {
+			font-size: 25px;
+		}
+
+		.players__number {
+			font-size: 15px;
+			top: -2px;
+			left: 25px;
+
+			&:after {
+				top: 20px;
+				left: 0;
+				width: 14px;
+				height: 4px;
+				border-radius: 2px;
+				background-color: #5e42b0;
+			}
+		}
+		
+		.players__growth {
+			background-color: #090c35;
+			padding-top: 40px;
+			padding-bottom: 0px;
+			min-height: 170px;
+
+			.players__number {
+				top: 38px;
+				color: #8765dd;
+
+				&:after {
+					background-color: white;
+				}
+			}
+
+			.players__text {
+				color: white;
+			}
+		}
+
+		.player__connection,
+		.player__collaboration,
+		.player__growth {
+			position: absolute;
+			left: 6000px;
+			top: 0;
+		}
+
+		.players__radiobuttons {
+			display: none;
+		}
+	}
+}
+
+@media @desktop-widths {
+		
+	.players {
+		position: relative;
+	
+		h2 {
+			font-size: 62px;
+			margin-top: 110px;
+			margin-bottom: 30px;
+			margin-right: 50%;
+			text-align: left;
+		}
+
+		img {
+			width: 991px;
+			height: 815px;
+			position: absolute;
+			top: -25px;
+			right: 0px;
+			left: 40%;
+			z-index: 2;
+		}
+
+		span {
+			font-size: 26px;
+		}
+
+		.players__number {
+			top: 0;
+			left: 200px;
+
+			&:after {
+				top: 27px;
+			}
+		}
+
+		.players__connection,
+		.players__collaboration,
+		.players__growth {
+			min-height: 50px;
+			padding: 60px 50% 60px 200px;
+
+			.players__number {
+				top: 60px;
+			}	
+		}
+
+		.aplayers__growth {
+			min-height: 70px;
+		}
+	}	
+}
