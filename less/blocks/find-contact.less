@@ -1,0 +1,175 @@
+.find-contact {
+
+	.find-contact__number {
+		width: 100%;
+		background: url("../img/find-contact--mobile.jpg") no-repeat;
+		min-height: 350px;
+		background-size: cover;
+		position: relative;
+
+		p {
+			display: block;
+			width: 70px;
+			height: 44px;
+			background: #5e42b0;
+			color: white;
+			text-align: center;
+			vertical-align: middle;
+			padding-top: 26px;
+			position: absolute;
+			bottom: -25px;
+			left: 20px; 
+
+			&:after {
+				content:"";
+				position: absolute;
+				top: 47px;
+				left: 27px;
+				width: 15px;
+				height: 4px;
+				border-radius: 2px;
+				background-color: #8f7bc8;
+			}
+		}
+	}
+
+	.find-contact__text {
+		padding-left: 20px;
+		box-sizing: border-box;
+		padding-bottom: 80px;
+		position: relative;
+
+		h2 {
+			color: #e7e7e7;
+			font-size: 36px;
+			text-transform: uppercase;
+			text-align: left;
+			display: block;
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		&:before {
+			position: absolute;
+			content: "";
+			bottom: 52px;
+			left: 20px;
+			width: 22px;
+			height: 4px;
+			border-radius: 2px;
+			background-color: #5e3db3;
+		}
+	}
+}
+
+@media @tablet-widths {
+
+		.find-contact {
+			width: 100%;
+
+		.find-contact__number {
+			width: 100%;
+			background: url("../img/find-contact--tablet.jpg") no-repeat;
+			background-size: cover;
+			position: relative;
+			min-height: 620px;
+
+			p {
+				width: 116px;
+				height: 66px;
+				bottom: -40px;
+				left: 32px;
+				padding-top: 40px;
+				font-size: 20px;
+				font-weight: bold;
+
+				&:after {
+					content:"";
+					position: absolute;
+					top: 63px;
+					left: 47px;
+					width: 20px;
+					height: 4px;
+					border-radius: 2px;
+					background-color: #8f7bc8;
+				}
+			}
+		}
+
+		.find-contact__text {
+			font-size: 24px;
+			line-height: 28px;
+			padding-bottom: 100px;
+
+			h2 {
+				font-size: 65px;
+				text-align: left;
+			}
+
+			&:before {
+				bottom: 60px;
+			}
+		}
+	}
+}
+
+@media @desktop-widths {
+
+		.find-contact {
+			display: flex;
+			flex-direction: row;
+
+		.find-contact__number {
+			width: 50%;
+			background: url("../img/find-contact--desktop.jpg") no-repeat;
+			background-size: cover;
+			position: relative;
+			min-height: 551px;
+
+			p {
+				width: 170px;
+				height: 110px;
+				bottom: 140px;
+				left: (50% - 62px);
+				padding-top: 60px;
+				font-size: 20px;
+				font-weight: bold;
+
+				&:after {
+					content:"";
+					position: absolute;
+					top: 90px;
+					left: 73px;
+					width: 20px;
+					height: 4px;
+					border-radius: 2px;
+					background-color: #8f7bc8;
+				}
+			}
+		}
+
+		.find-contact__text {
+			font-size: 24px;
+			line-height: 28px;
+			padding-left: 130px;
+			margin-top: 180px;
+			order: -1;
+			width: 50%;
+
+			h2 {
+				font-size: 65px;
+				text-align: left;
+				line-height: 72px;
+			}
+
+			p {
+				width: 260px;
+			}
+
+			&:before {
+				bottom: 70px;
+				left: 130px;
+			}
+		}
+	}
+}
